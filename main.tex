@@ -1,0 +1,68 @@
+\documentclass[1in,a4paper]{article}
+\usepackage[a4paper, margin=1in]{geometry}
+\usepackage{siunitx}
+\usepackage{txfonts}
+\usepackage[spanish,es-tabla]{babel}
+\usepackage{graphicx} % Required for inserting images
+\usepackage{subfiles} % Importar archivos .tex
+\usepackage{multirow} %multiples columnas
+\usepackage{fancyhdr} %encabezados
+\usepackage{float} %posicion
+\usepackage{tabularx} %tablas
+
+\usepackage{tikz}
+\usetikzlibrary{positioning, shapes, shadows}
+\usepackage{enumitem}
+\usepackage{caption}
+
+\usepackage[square,numbers]{natbib} %bibliografia
+\bibliographystyle{abbrvnat}
+
+\title{Informe de Laboratorio 3: Termoquímica}
+
+\begin{document}
+
+\subfile{sections/caratula.tex}
+\pagestyle{fancy}
+\fancyfoot{}
+\fancyfoot[R]{\textit{\thepage}}
+\fancyfoot[L]{\textit{Facultad de Ciencias - UNI}}
+%-------------------------------------------------------------------
+\tableofcontents
+%-------------------------------------------------------------------
+\newpage
+\section{Introducción} %done
+\subfile{sections/introduccion}
+
+\section{Objetivos del Experimento} %done
+\subfile{sections/objetivos}
+%-------------------------------------------------------------------
+\section{Fundamento Teórico} %done
+\subfile{sections/fundamentos}
+%-------------------------------------------------------------------
+\section{Procedimiento Experimental} %done
+\subfile{sections/procedimiento}
+%-------------------------------------------------------------------
+\section{Observaciones y/o Datos Experimentales} %done
+\subfile{sections/observaciones}
+%-------------------------------------------------------------------
+\section{Cálculos} %done
+\subfile{sections/calculos}
+%-------------------------------------------------------------------
+\section{Resultados} %done
+\subfile{sections/resultados}
+%-------------------------------------------------------------------
+\section{Discusión de Resultados} %done
+\subfile{sections/discusion}
+%-------------------------------------------------------------------
+\section{Conclusiones} %done
+\subfile{sections/conclusiones}
+%-------------------------------------------------------------------
+\section{Bibliografía} %done
+\renewcommand{\bibsection}{}
+\bibliography{extras/bibliography}
+%-------------------------------------------------------------------
+\newpage
+\listoffigures
+\listoftables
+\end{document}

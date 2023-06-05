@@ -3,14 +3,51 @@
 \usepackage{multirow}
 \usepackage{float}
 \usepackage{array}
-\usepackage{tabularx}
 
-\usepackage{tikz}
-\usetikzlibrary{positioning, shapes, shadows}
-\usepackage{enumitem}
-\usepackage{caption}
-\captionsetup[table]{name = tabla}
+\usepackage{gensymb}%degree symbol
 
 \begin{document}
+
+\begin{table}[H]
+    \centering
+    \begin{tabular}{c|c|c|c}
+        \hline
+        Tubos de Ensayo & Masa ($g$) & Volumen ($mL$) & Temperatura de Cristalización ($\degree C$) \\
+        \hline
+        #1    &  2.01      &   1    &  91  \\
+        #2    &  1.52      &   1    &  85  \\
+        #3    &  1.20      &   1    &  76  \\
+        #4    &  1.00      &   1    &  54  \\
+        \hline
+    \end{tabular}
+    \label{tab:exp1}
+    \caption{Datos obtenidos del experimento 1}
+\end{table}
+
+\begin{table}[H]
+    \centering
+    \begin{tabular}{c|c|c}
+        \hline
+        Molaridad del $HCl_{(ac)}\:(M)$ & Volumen de $HCl_{(ac)}\:(mL)$ & Volumen usado de $H_2O$ puro $(mL)$\\
+        \hline
+        1 $M$ & 50 $mL$ & 50 $mL$ \\ 
+        \hline
+    \end{tabular}
+    \label{tab:exp2}
+    \caption{Datos obtenidos del experimento 2}
+\end{table}
+
+\begin{table}[H]
+    \centering
+    \begin{tabular}{c|c}
+        \hline
+        Masa de $NaCl \:(g)$ & Volumen de $H_2O$ usado $(mL)$\\
+        \hline
+        0.4     &   10 \\
+        \hline
+    \end{tabular}
+    \label{tab:exp3}
+    \caption{Datos obtenidos del experimento 3}
+\end{table}
 
 \end{document}

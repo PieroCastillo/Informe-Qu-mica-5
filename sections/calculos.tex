@@ -1,7 +1,7 @@
 \documentclass[../main.tex]{subfiles}
 \begin{document}
 \subsection{Experimento 1}
-Reacción de disolución del $KNO_3$ en $H_2O$:
+\textit{Reacción de disolución del $KNO_3$ en $H_2O$:}
 \[ KNO_{3(s)} \rightarrow K^+_{(ac)} + NO^-_{3(ac)} \]
 Para obtener la solubilidad, tenemos que convertir las proporciones 
 de masa/1 $mL$ a masa/100 $g$.
@@ -52,8 +52,10 @@ Con estos datos, realizamos la curva experimental de la solubilidad del $KNO_3$:
                 domain=50:95,
                 color=blue,
                 samples=100
-            ]{29.1428395077695*exp(0.020434940402*(x))};
-            \addlegendentry{\(29.1428exp(0.02(x))\)}
+            ]{-8.7981*10^(-10)*(x^6) + 6.2684*10^(-7)*(x^5) - 0.0000866718*(x^4) + 0.00362603*(x^3)};
+            %]{29.1428395077695*exp(0.020434940402*(x))};
+            %\addlegendentry{\(-8.8\cdot10^{-10}x^6 + 6.3\cdot10^{-7}x^5 - 8.7\cdot10^{-5}x^4 + 3.6\cdot10^{-3}x^3\)}
+            \addlegendentry{\(-8.8\cdot10^{-10}x^6 + 6.3\cdot10^{-7}x^5 - 8.7\cdot10^{-5}x^4 + 3.6\cdot10^{-3}x^3\)}
 
             %data from table
             \addplot[
@@ -68,17 +70,47 @@ Con estos datos, realizamos la curva experimental de la solubilidad del $KNO_3$:
 
 \subsection{Experimento 2}
 
-Reacción del $H_2O$ con el $HCl$:
-\[H_2O_{(l) \: + HCl_{(ac)} \rightarrow \: H_3O^+_{(ac)} \: + Cl^-_{(ac)}} \]
+\textit{Reacción del $H_2O$ con el $HCl$:}
+\[H_2O_{(l)} \: + HCl_{(ac)} \rightarrow \: H_3O^+_{(ac)} \: + Cl^-_{(ac)} \]
 Para hallar el volumen necesario de $HCl$ 2 M para diluirlo a 1 M
 usaremos la siguiente ecuación:
 \[
     V_1\cdot M_1 = V_2\cdot M_2
 \]
 Reemplazando:
-\[V_{ácido\:concentrado}\cdot 2\,M = 100\,mL\cdot1\,M\]
-\[V_{ácido\:concentrado}\,=\,50\,mL \]
+\[V_{\acute{a}cido\:concentrado}\cdot 2\,M = 100\,mL\cdot1\,M\]
+\[V_{\acute{a}cido\:concentrado}\,=\,50\,mL \]
+
+Deduciendo sabemos que tenemos que añadir 50 $mL$ de agua
+destilada al $HCl$ 2 M para así obtener $HCl$ 1 M. 
 
 \subsection{Experimento 3}
+
+\textit{Reacción del $H_2O$ con el $NaOH$:}
+\[
+    H_2O_{(l)} + NaOH_{(s)} \rightarrow Na^+_{(ac)} + OH^-_{(ac)} + H_2O_{(l)}
+\]
+Para hallar la cantidad necesaria de $NaOH$, usaremos las siguientes ecuaciones:
+\begin{equation} \label{molaridad_eq}
+    \eta_{NaOH} = V_{NaOH}\cdot M_{NaOH}
+\end{equation}
+\begin{equation} \label{molar_mass_eq}
+    m_{NaOH} = \eta_{NaOH}\cdot \overline{M}_{NaOH}
+\end{equation}
+Reemplazando \ref{molaridad_eq} en \ref{molar_mass_eq}:
+\begin{equation} \label{resultant_eq}
+    m_{NaOH} = V_{NaOH}\cdot M_{NaOH}\cdot \overline{M}_{NaOH}
+\end{equation}
+Reemplazando con los valores numéricos:
+\[
+    m_{NaOH} = 100\cdot10^{-3}\,L\cdot0.1\,\frac{mol}{L}\cdot 40\frac{g}{mol}
+\]
+\[  m_{NaOH} = 0.4\,g\]
+Entonces usando esa cantidad de $NaOH_{(s)}$ obtenemos la solución con la molaridad deseada.
+
+La concentración de la solución de determinó de la siguiente manera:
+
+\[ [NaOH] = 0.40\,g\cdot \frac{1\,mol}{40\,g}\cdot\frac{1}{0.1\,L}\]
+\[ [NaOH] = 0.1\,M\]
 
 \end{document}

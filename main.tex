@@ -11,6 +11,13 @@
 \usepackage{tabularx} %tablas
 \usepackage{gensymb}%degree symbol
 
+\usepackage{pgfplots} %tables
+\pgfplotsset{width=10cm,compat=1.9}
+
+% We will externalize the figures
+\usepgfplotslibrary{external}
+\tikzexternalize
+
 \usepackage{tikz}
 \usetikzlibrary{positioning, shapes, shadows}
 \usepackage{enumitem}
@@ -44,7 +51,7 @@
 \section{Procedimiento Experimental} %jamir
 \subfile{sections/procedimiento}
 %-------------------------------------------------------------------
-\section{Observaciones y/o Datos Experimentales} %empty
+\section{Observaciones y/o Datos Experimentales} %done
 \subfile{sections/observaciones}
 %-------------------------------------------------------------------
 \section{Cálculos} %empty

@@ -52,11 +52,10 @@ Con estos datos, realizamos la curva experimental de la solubilidad del $KNO_3$:
                 domain=50:95,
                 color=blue,
                 samples=100
-            ]{-8.7981*10^(-10)*(x^6) + 6.2684*10^(-7)*(x^5) - 0.0000866718*(x^4) + 0.00362603*(x^3)};
-            %]{29.1428395077695*exp(0.020434940402*(x))};
+            %]{-8.7981*10^(-10)*(x^6) + 6.2684*10^(-7)*(x^5) - 0.0000866718*(x^4) + 0.00362603*(x^3)};
+            ]{exp(0.126*(x-54)) + 100};
             %\addlegendentry{\(-8.8\cdot10^{-10}x^6 + 6.3\cdot10^{-7}x^5 - 8.7\cdot10^{-5}x^4 + 3.6\cdot10^{-3}x^3\)}
-            \addlegendentry{\(-8.8\cdot10^{-10}x^6 + 6.3\cdot10^{-7}x^5 - 8.7\cdot10^{-5}x^4 + 3.6\cdot10^{-3}x^3\)}
-
+            \addlegendentry{$exp(0.126\cdot(x-54))$}
             %data from table
             \addplot[
                 color=red,

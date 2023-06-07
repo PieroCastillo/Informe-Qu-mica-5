@@ -1,11 +1,111 @@
 \documentclass[../main.tex]{subfiles}
+
 \usepackage{float}
 \usepackage{tikz}
 \usetikzlibrary{positioning, shapes, shadows}
 \usepackage{enumitem}
 \usepackage{caption}
-\captionsetup[table]{name = tabla}
 
 \begin{document}
 
+\subsection{Experimento 1}
+\begin{figure}[H]
+    \hspace{1em}
+    \tikzstyle{celeste}=[ellipse, draw = celesteOscuro, fill = celeste, text centered, text = black, text width = 6cm]
+    \tikzstyle{naranja}=[rectangle, rounded corners, draw = naranjaOscuro, fill = naranja, text centered, text = black, text width = 8cm]
+    \tikzstyle{linea}=[-]
+
+    \begin{center}
+    \begin{tikzpicture}[align = center, node distance = 2cm]
+    \node (titulo) [celeste] {Solubilidad del KNO3 mediante cristalización};
+
+    \node (cuadro1) [naranja, below = 0.9cm of titulo] {Se utilizaron cuatro tubos de ensayo marcados con 1, 2, 3, 4 y se les agrego 2.0g, 1.5g, 1.2g, 1.0g de KNO3, respectivamente. Luego, con una pipeta, se agrego 1ml de agua destilada en cada tubo de ensayo};
+
+    \node (cuadro2) [naranja, below = 0.9cm of cuadro1] {Se colocaron los 4 tubos de ensayo en un vaso de precipitados que previamente se lleno en 2/3 de su volumen con agua de grifo y se calentó con ayuda de un mechero};
+
+    \node (cuadro3) [naranja, below = 0.9cm of cuadro2] {Inmediatamente después se sumergió en el agua del vaso un termómetro y se anotaron las temperaturas, luego se calentó hasta alcanzar la temperatura de ebullición, con ayuda de una varilla de agitación se disolvió la sal de los tubos de ensayo};
+
+    \node (cuadro4) [naranja, below = 0.9cm of cuadro3] {Se retiró la plancha eléctrica y se dejó enfriar lentamente. Después, se agitó el tubo de ensayo de arriba abajo con la varilla de agitación, una vez formado el precipitado se midió su temperatura};
+
+    \node (cuadro5) [naranja, below = 0.9cm of cuadro4] {Se repitió con los demás tubos de ensayo y luego se comparó con los resultados teóricos};
+
+    \draw[linea] (titulo.south) |- (cuadro1.north);
+    \draw[linea] (cuadro1.south) |- (cuadro2.north);
+    \draw[linea] (cuadro2.south) |- (cuadro3.north);
+    \draw[linea] (cuadro3.south) |- (cuadro4.north);
+    \draw[linea] (cuadro4.south) |- (cuadro5.north);
+
+    \end{tikzpicture}        
+    \end{center}
+    \label{fig:proc_1}
+    \caption{Diagrama de flujo del experimento 1: Elaboración de la curva de solubilidad del $KNO_3$ \cite{lab}}
+\end{figure}
+
+%Experimento 2
+\subsection{Experimento 2}
+\begin{figure}[H]
+    \hspace{1em}
+    \tikzstyle{celeste}=[ellipse, draw = celesteOscuro, fill = celeste, text centered, text = black, text width =6cm]
+    \tikzstyle{amarillo}=[rectangle, rounded corners, draw = amarilloOscuro, fill = amarillo, text centered, text = black, text width = 8cm]
+    \tikzstyle{linea}=[-]
+
+    \begin{center}
+    \begin{tikzpicture}[align = center, node distance = 2cm]
+    \node (titulo) [celeste] {Preparación de 100 mL de HCl 1M a partir de una disolución de ácido clorhídrico 2M};
+
+    \node (cuadro1) [amarillo, below = 0.9cm of titulo] {Primero, se reconoció el frasco que contiene HCl 2M y una fiola limpia de 100ml};
+
+    \node (cuadro2) [amarillo, below = 0.9cm of cuadro1] {Mediante una ecuación, se determinó el volumen necesario de la disolución de ácido clorhídrico 2M para preparar 100 ml de una disolución de HCl 1 M};
+
+    \node (cuadro3) [amarillo, below = 0.9cm of cuadro2] {Con ayuda de una pipeta graduada y una bombilla de succión se extrajo el volumen, calculado previamente, de HCl 2M y se vertió en la fiola de 100ml};
+
+    \node (cuadro4) [amarillo, below = 0.9cm of cuadro3] {Se completó hasta la linea de aforo con agua destilada};
+
+    \node (cuadro5) [amarillo, below = 0.9cm of cuadro4] {Por último, se vertió la solución a un frasco y se rotuló con su fórmula y concentración respectiva};
+
+    \draw[linea] (titulo.south) |- (cuadro1.north);
+    \draw[linea] (cuadro1.south) |- (cuadro2.north);
+    \draw[linea] (cuadro2.south) |- (cuadro3.north);
+    \draw[linea] (cuadro3.south) |- (cuadro4.north);
+    \draw[linea] (cuadro4.south) |- (cuadro5.north);
+
+    \end{tikzpicture}        
+    \end{center}
+    \label{fig:proc_2}
+    \caption{Diagrama de flujo del experimento 2: Preparación de la solución de $HCl$ 1M \cite{lab}}
+\end{figure}
+
+%Experimento 3
+\subsection{Experimento 3}
+\begin{figure}[H]
+    \hspace{1em}
+    \tikzstyle{celeste}=[ellipse, draw = celesteOscuro, fill = celeste, text centered, text = black, text width = 6cm]
+    \tikzstyle{azul}=[rectangle, rounded corners, draw = azulOscuro, fill = azul, text centered, text = black, text width = 8cm]
+    \tikzstyle{linea}=[-]
+
+    \begin{center}
+    \begin{tikzpicture}[align = center, node distance = 2cm]
+    \node (titulo) [celeste] {Preparación de 100 ml de NaOH 0,1M};
+
+    \node (cuadro1) [azul, below = 0.9cm of titulo] {Se identificó y preparó una pipeta de 100ml limpia y enjuagada con agua destilada};
+
+    \node (cuadro2) [azul, below = 0.9cm of cuadro1] {En un vaso pequeño de precipitados, previamente limpiado y secado, se pesó la cantidad adecuada de NaOH necesarias para preparar la solución.};
+
+    \node (cuadro3) [azul, below = 0.9cm of cuadro2] {Luego, con ayuda de una probeta, se agregó 30ml de agua destilada, por último se disolvió el NaOH};
+
+    \node (cuadro4) [azul, below = 0.9cm of cuadro3] {Una vez terminado de disolver todo el NaOH se vertió toda la mezcla en la fiola y se completó con agua destilada.};
+
+    \node (cuadro5) [azul, below = 0.9cm of cuadro4] {Luego se procedió a mezclar la solución terminada. Por último, se vertió la solución a un frasco y se rotuló con la información precisada};
+
+    \draw[linea] (titulo.south) |- (cuadro1.north);
+    \draw[linea] (cuadro1.south) |- (cuadro2.north);
+    \draw[linea] (cuadro2.south) |- (cuadro3.north);
+    \draw[linea] (cuadro3.south) |- (cuadro4.north);
+    \draw[linea] (cuadro4.south) |- (cuadro5.north);
+
+    \end{tikzpicture}        
+    \end{center}
+    \label{fig:proc_3}
+    \caption{Diagrama de flujo del Experimento 3: Preparación de la solución de NaOH 0.1M \cite{lab}}
+\end{figure}
 \end{document}
